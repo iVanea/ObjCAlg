@@ -7,6 +7,7 @@
 //
 
 #import "BFS.h"
+#import "Node.h"
 
 @implementation BFS
 

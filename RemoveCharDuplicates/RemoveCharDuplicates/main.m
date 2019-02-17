@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "BFS.h"
 //#include <stdio.h>
 //#include <objc/objc.h>
 
@@ -30,6 +31,9 @@ int main(int argc, const char * argv[]) {
         printf("Initial string: %s \n", [input UTF8String]);
         NSString *result = removeDuplicates(input);
         printf("After removing duplicates:\n%s \n", [result UTF8String]);
+        
+        BFS *b = [[BFS alloc]init];
+//        [b bfsPrint];
     }
     return 0;
 }

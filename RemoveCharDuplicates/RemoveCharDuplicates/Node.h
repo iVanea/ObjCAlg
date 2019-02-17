@@ -1,8 +1,8 @@
 //
-//  BFS.h
+//  Node.h
 //  RemoveCharDuplicates
 //
-//  Created by Timotin Ion on 1/16/19.
+//  Created by Timotin Ion on 1/20/19.
 //  Copyright © 2019 Timotin. All rights reserved.
 //
 
@@ -10,9 +10,10 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface BFS : NSObject
--(void)bfsPrint;
-
+@interface Node : NSObject  {
+    NSSet *linkedNodes;
+}
+@property(nonatomic, retain) NSSet *linkedNodes;
 @end
 
 NS_ASSUME_NONNULL_END
